@@ -18,11 +18,11 @@ function App() {
       </div>
 
       <div>
-        <a href="/vite-mpa-test/">Link to vite mpa setup page</a>
+        <a href="./vite-mpa-test/">Link to vite mpa setup page</a>
       </div>
 
       <div>
-        <a href="/invalid-path/">Invalid Link</a>
+        <a href="./invalid-path/">Invalid Link</a>
       </div>
 
       <p className="read-the-docs">
