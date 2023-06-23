@@ -9,9 +9,10 @@ const __filename = url.fileURLToPath(new URL(import.meta.url));
 export default defineConfig({
   plugins: [react()],
   root: resolve(__filename, "../src"),
-  base: "./",
+  base: "", // use relative hrefs when bundling
   build: {
     outDir: resolve(__filename, "../dist"),
+    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: resolve(__filename, "../src/index.html"),
