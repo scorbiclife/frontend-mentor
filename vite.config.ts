@@ -16,7 +16,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__filename, "../src/index.html"),
-        "vite-mpa-test": resolve(__filename, "../src/vite-mpa-test/index.html"),
+        "product-preview-card-component": resolve(
+          __filename,
+          "../src/product-preview-card-component/index.html"
+        ),
       },
     },
   },
