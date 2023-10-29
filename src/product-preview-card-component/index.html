@@ -20,13 +20,13 @@
 <body>
   <main>
     <article class="product">
-      <img srcset="
+      <img class="product__img" srcset="
             ./images/image-product-mobile.jpg   343w,
-            ./images/image-product-desktop.jpg 1440w
-          " sizes="(max-width: 600px) 343px, 1440px" src="./images/image-product-desktop.jpg" width="343" height="240"
+            ./images/image-product-desktop.jpg 1440w" sizes="(max-width: 600px) 343px, 1440px"
+        src="./images/image-product-desktop.jpg" width="343" height="240"
         alt='Product photo of "Gabrielle Essence Eau De Parfum"' />
-      <article>
-        <header>PERFUME</header>
+      <article class="product__article">
+        <header class="product__category">PERFUME</header>
         <h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
         <p class="product__description">
           A floral, solar and voluptuous interpretation composed by Olivier
@@ -45,14 +45,14 @@
         </button>
       </article>
     </article>
-    <footer>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-          href="#">Your Name Here</a>.
-      </div>
-    </footer>
   </main>
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="https://github.com/nightlyherb">NightlyHerb</a>.
+    </div>
+  </footer>
 </body>
 
 </html>
