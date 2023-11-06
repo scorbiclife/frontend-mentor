@@ -30,5 +30,7 @@ Users should be able to:
   index.html -->|depends on| common.css
   ```
 
-- I tried using CSS transitions for active states.
-  The result looks nice to me.
+- I tried using CSS transitions for active states. The result looks nice to me.
+
+- Order of including stylesheeets matter. Generic stylesheets first, specific ones later.
+  More importantly, this and CSS specificity are the first place to look for when things go wrong.
