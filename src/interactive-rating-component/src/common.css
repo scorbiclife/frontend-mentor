@@ -1,0 +1,38 @@
+/** 
+ * Tried my best to organize reusable components in a utility file.
+ * How common classes are organized may vary by project.
+ */
+
+.title-font {
+  color: var(--White, #ffffff);
+
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.content-font {
+  color: var(--Light-Gray, #959eac);
+
+  font-family: Overpass;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+
+.round-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 9999px;
+  background: var(--Dark-Blue, #252d37);
+}
