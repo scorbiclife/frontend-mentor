@@ -29,3 +29,6 @@ Users should be able to:
   index.css -->|depends on| index.html
   index.html -->|depends on| common.css
   ```
+
+- I tried using CSS transitions for active states.
+  The result looks nice to me.
