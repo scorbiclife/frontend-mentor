@@ -34,3 +34,10 @@ Users should be able to:
 
 - Order of including stylesheeets matter. Generic stylesheets first, specific ones later.
   More importantly, this and CSS specificity are the first place to look for when things go wrong.
+
+### Timeline
+
+- Mobile Design with Figma (both screens): 1hr (morning)
+- HTML design migration (first screen): 1hr (morning)
+- Add active states and transitions: 1hr (afternoon)
+- Debug CSS issue due to invalid CSS property: 1hr (morning)
