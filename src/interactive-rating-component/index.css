@@ -12,14 +12,14 @@ main {
   justify-content: center;
   align-items: center;
 
-  padding: auto;
+  padding: 0 24px;
 
   background: var(--Very-Dark-Blue, #121417);
   color: var(--White, #ffffff);
 }
 
 .interactive-rating-component {
-  width: 327px;
+  width: 420px;
   height: 360px;
 
   display: flex;

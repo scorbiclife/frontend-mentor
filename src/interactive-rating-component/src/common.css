@@ -10,7 +10,6 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .content-font {
@@ -20,7 +19,10 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 22.4px */
+}
+
+.content-line-height {
+  line-height: 160%;
 }
 
 .round-icon {
@@ -30,8 +32,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  flex-shrink: 0;
 
   border-radius: 9999px;
   background: var(--Dark-Blue, #252d37);
