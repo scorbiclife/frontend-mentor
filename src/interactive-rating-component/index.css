@@ -18,7 +18,7 @@ main {
   color: var(--White, #ffffff);
 }
 
-.interactive-rating-component {
+.rating {
   width: 420px;
   height: 360px;
 
@@ -33,7 +33,7 @@ main {
   background: var(--Dark-Blue, #1e252e);
 }
 
-.interactive-rating-component__rating {
+.rating__rating {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -43,36 +43,36 @@ main {
   padding: 8px 0px;
 }
 
-.interactive-rating-component__rating input[type="radio"] {
+.rating__rating input[type="radio"] {
   display: none;
 }
 
-.interactive-rating-component__rating-icon {
+.rating__rating-icon {
   background-color: var(--Dark-Blue, #252d37);
   color: var(--Medium-Gray, #7c8798);
 }
 
 /** Purposefully set selector specificity to "1 class" to prevent madness */
-.interactive-rating-component__rating-icon:where(:hover) {
+.rating__rating-icon:where(:hover) {
   background-color: var(--Medium-Gray, #7c8798);
   color: var(--White, #ffffff);
   transition: background-color 0.2s, color 0.2s;
 }
 
 /** Purposefully set selector specificity to "1 class" to prevent madness */
-.interactive-rating-component__rating-icon:where(:has(:checked)) {
+.rating__rating-icon:where(:has(:checked)) {
   background-color: var(--Orange, #fb7413);
   color: var(--White, #ffffff);
   transition: background-color 0.1s, color 0.1s;
 }
 
 /** Purposefully set selector specificity to "1 class" to prevent madness */
-.interactive-rating-component__rating-icon:where(:hover:has(:checked)) {
+.rating__rating-icon:where(:hover:has(:checked)) {
   background-color: var(--Light-Orange, #ffc499);
   transition: background-color 0.1s, color 0.1s;
 }
 
-.interactive-rating-component__submit {
+.rating__submit {
   display: flex;
   height: 48px;
   flex-direction: column;
@@ -95,13 +95,13 @@ main {
   letter-spacing: 3px;
 }
 
-.interactive-rating-component__submit:hover {
+.rating__submit:hover {
   color: var(--Orange, #fb7413);
   background-color: var(--White, #ffffff);
   transition: background-color 0.2s, color 0.2s;
 }
 
-.interactive-rating-component__submit:active {
+.rating__submit:active {
   background-color: var(--Orange, #fb7413);
   color: var(--White, #ffffff);
   transition: background-color 0.1s, color 0.1s;
