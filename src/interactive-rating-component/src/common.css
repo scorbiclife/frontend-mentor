@@ -3,36 +3,75 @@
  * How common classes are organized may vary by project.
  */
 
-.title-font {
-  color: var(--White, #ffffff);
+@layer utilities {
+  .title-font {
+    color: var(--White, #ffffff);
 
-  font-family: Overpass;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-}
+    font-family: Overpass;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+  }
 
-.content-font {
-  color: var(--Light-Gray, #959eac);
+  .content-font {
+    color: var(--Light-Gray, #959eac);
 
-  font-family: Overpass;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-}
+    font-family: Overpass;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
 
-.content-line-height {
-  line-height: 160%;
-}
+  .content-line-height {
+    line-height: 160%;
+  }
 
-.round-icon {
-  width: 40px;
-  height: 40px;
+  .round-icon {
+    width: 40px;
+    height: 40px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  border-radius: 9999px;
-  background: var(--Dark-Blue, #252d37);
+    border-radius: 9999px;
+  }
+
+  .bg--dark-blue,
+  .bg--dark-blue\:hover:hover,
+  .bg--dark-blue\:active:active,
+  .bg--dark-blue\:checked:checked,
+  .bg--dark-blue\:has-checked:has(:checked) {
+    background-color: var(--Dark-Blue, #252d37);
+    color: var(--Medium-Gray, #7c8798);
+  }
+
+  .bg--medium-gray,
+  .bg--medium-gray\:hover:hover,
+  .bg--medium-gray\:active:active,
+  .bg--medium-gray\:checked:checked,
+  .bg--medium-gray\:has-checked:has(:checked) {
+    background-color: var(--Medium-Gray, #7c8798);
+    color: var(--White, #ffffff);
+  }
+
+  .bg--orange,
+  .bg--orange\:hover:hover,
+  .bg--orange\:active:active,
+  .bg--orange\:checked:checked,
+  .bg--orange\:has-checked:has(:checked) {
+    background-color: var(--orange, #fb7413);
+    color: var(--white, #ffffff);
+    transition: background-color 0.1s, color 0.1s;
+  }
+
+  .bg--white_fg--orange,
+  .bg--white_fg--orange\:hover:hover,
+  .bg--white_fg--orange\:active:active,
+  .bg--white_fg--orange\:checked:checked,
+  .bg--white_fg--orange\:has-checked:has(:checked) {
+    background-color: var(--Medium-Gray, #7c8798);
+    color: var(--White, #ffffff);
+    transition: background-color 0.1s, color 0.1s;
+  }
 }

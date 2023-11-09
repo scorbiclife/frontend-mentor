@@ -35,9 +35,23 @@ Users should be able to:
 - Order of including stylesheeets matter. Generic stylesheets first, specific ones later.
   More importantly, this and CSS specificity are the first place to look for when things go wrong.
 
+- Conflicting CSS rules with the same specificity
+  are settled by **declaration order**, **not usage order in HTML**.
+  This makes non-one-liner utility classes harder to use with vanilla CSS,
+  as many classes have the same specificity.
+
+- CSS cascading depends on import order, which makes cascading order annoying to control.
+  You can use [CSS cascade layers](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers) to have explicit control.
+
+- I decided to use React + CSS Modules + utility classes imported locally inside these modules.
+  - I am okay with other solutions (tailwind, SCSS)
+    as long as they have a sane way to make things work.
+    Vanilla CSS does not.
+
 ### Timeline
 
 - Mobile Design with Figma (both screens): 1hr (morning)
 - HTML design migration (first screen): 1hr (morning)
 - Add active states and transitions: 1hr (afternoon)
 - Debug CSS issue due to invalid CSS property: 1hr (morning)
+- Debug CSS cascading issues: 1.5 hrs (afternoon)

@@ -47,31 +47,6 @@ main {
   display: none;
 }
 
-.rating__rating-icon {
-  background-color: var(--Dark-Blue, #252d37);
-  color: var(--Medium-Gray, #7c8798);
-}
-
-/** Purposefully set selector specificity to "1 class" to prevent madness */
-.rating__rating-icon:where(:hover) {
-  background-color: var(--Medium-Gray, #7c8798);
-  color: var(--White, #ffffff);
-  transition: background-color 0.2s, color 0.2s;
-}
-
-/** Purposefully set selector specificity to "1 class" to prevent madness */
-.rating__rating-icon:where(:has(:checked)) {
-  background-color: var(--Orange, #fb7413);
-  color: var(--White, #ffffff);
-  transition: background-color 0.1s, color 0.1s;
-}
-
-/** Purposefully set selector specificity to "1 class" to prevent madness */
-.rating__rating-icon:where(:hover:has(:checked)) {
-  background-color: var(--Light-Orange, #ffc499);
-  transition: background-color 0.1s, color 0.1s;
-}
-
 .rating__submit {
   display: flex;
   height: 48px;
@@ -83,9 +58,6 @@ main {
 
   border: none;
   border-radius: 9999px;
-  background: var(--Orange, #fb7413);
-
-  color: var(--White, #ffffff);
   font-family: Overpass;
   font-size: 14px;
   font-style: normal;
@@ -93,18 +65,6 @@ main {
   text-transform: uppercase;
   line-height: 160%; /* 22.4px */
   letter-spacing: 3px;
-}
-
-.rating__submit:hover {
-  color: var(--Orange, #fb7413);
-  background-color: var(--White, #ffffff);
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.rating__submit:active {
-  background-color: var(--Orange, #fb7413);
-  color: var(--White, #ffffff);
-  transition: background-color 0.1s, color 0.1s;
 }
 
 .attribution {
