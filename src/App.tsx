@@ -5,9 +5,18 @@ function App() {
     <>
       <h1>Frontend Mentor Challenges</h1>
 
-      <div>
-        <a href="./product-preview-card-component/">Product preview card component</a>
-      </div>
+      <ul>
+        <li>
+          <a href="./product-preview-card-component/">
+            Product preview card component
+          </a>
+        </li>
+        <li>
+          <a href="./interactive-rating-component/">
+            Interactive Rating Component
+          </a>
+        </li>
+      </ul>
     </>
   );
 }

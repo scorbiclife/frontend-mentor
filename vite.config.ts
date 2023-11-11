@@ -20,6 +20,10 @@ export default defineConfig({
           __filename,
           "../src/product-preview-card-component/index.html"
         ),
+        "interactive-rating-component": resolve(
+          __filename,
+          "../src/interactive-rating-component/index.html"
+        ),
       },
     },
   },
