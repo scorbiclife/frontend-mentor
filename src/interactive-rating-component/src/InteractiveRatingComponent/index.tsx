@@ -1,10 +1,12 @@
+import css from "./index.module.css";
+
 export default function InteractiveRatingComponent() {
   return <InteractiveRatingComponentAskScene />;
 }
 
 function InteractiveRatingComponentAskScene() {
   return (
-    <form className="rating">
+    <form className={css.rating}>
       <span className="round-icon bg--dark-blue">
         <img src="./images/icon-star.svg" alt="decorative star icon" />
       </span>
@@ -13,14 +15,14 @@ function InteractiveRatingComponentAskScene() {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <div className="rating__rating content-font">
+      <div className={`${css.rating_rating} content-font`}>
         <RatingOption value={1} />
         <RatingOption value={2} />
         <RatingOption value={3} />
         <RatingOption value={4} />
         <RatingOption value={5} />
       </div>
-      <button type="submit" className="rating__submit">
+      <button type="submit" className="bg-white-fg-orange">
         Submit
       </button>
     </form>
@@ -29,7 +31,7 @@ function InteractiveRatingComponentAskScene() {
 
 function RatingOption(props: { value: number }) {
   return (
-    <label className="round-icon bg--dark-blue bg--medium-gray:hover bg--orange:has-checked">
+    <label className={css.rating_option}>
       {props.value}
       <input type="radio" name="rating" value={props.value} />
     </label>
