@@ -8,6 +8,11 @@ const __filename = url.fileURLToPath(new URL(import.meta.url));
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {},
+    },
+  },
   root: resolve(__filename, "../src"),
   base: "", // use relative hrefs when bundling
   build: {

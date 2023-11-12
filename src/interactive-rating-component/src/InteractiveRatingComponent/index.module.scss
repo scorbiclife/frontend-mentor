@@ -1,0 +1,86 @@
+@use "../util";
+
+.rating {
+  @include util.content-font;
+
+  width: 420px;
+  height: 360px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+
+  padding: 24px;
+  border-radius: 8px;
+
+  background: var(--Dark-Blue, #1e252e);
+
+  .icon {
+    @include util.round-icon;
+  }
+
+  .title {
+    @include util.title-font;
+  }
+
+  .content {
+    @include util.content-line-height;
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    align-self: stretch;
+
+    padding: 8px 0px;
+
+    .option {
+      @include util.round-icon;
+      @include util.bg-dark-blue;
+
+      &:hover {
+        @include util.bg-medium-gray;
+      }
+      &:has(:checked) {
+        @include util.bg-orange;
+      }
+      &:has(:checked):hover {
+        @include util.bg-medium-gray;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+  }
+
+  button[type="submit"] {
+    @include util.content-font;
+    @include util.bg-orange;
+
+    height: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    border: none;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: 3px;
+
+    &:hover {
+      @include util.bg-white-fg-orange;
+    }
+    &:active {
+      @include util.bg-orange;
+    }
+  }
+}

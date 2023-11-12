@@ -1,0 +1,65 @@
+/** 
+ * Tried my best to organize reusable components in a utility file.
+ * How common classes are organized may vary by project.
+ */
+
+@mixin title-font {
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+
+  color: var(--White, #ffffff);
+}
+
+@mixin content-font {
+  font-family: Overpass;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+
+  color: var(--Light-Gray, #959eac);
+}
+
+@mixin content-line-height {
+  line-height: 160%;
+}
+
+@mixin round-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 9999px;
+}
+
+@mixin bg-dark-blue {
+  background-color: var(--Dark-Blue, #252d37);
+  color: var(--Medium-Gray, #7c8798);
+}
+
+@mixin bg-medium-gray {
+  background-color: var(--Medium-Gray, #7c8798);
+  color: var(--White, #ffffff);
+}
+
+@mixin bg-orange {
+  background-color: var(--orange, #fb7413);
+  color: var(--white, #ffffff);
+}
+
+@mixin bg-white-fg-orange {
+  background-color: var(--white, #ffffff);
+  color: var(--orange, #fb7413);
+}
+
+@mixin color-transition-short {
+  transition: color 0.1s background-color 0.1s;
+}
+
+@mixin color-transition-medium {
+  transition: color 0.2s background-color 0.2s;
+}
